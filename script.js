@@ -23,6 +23,8 @@
 // });
 
 
+
+
 const toggleBtn = document.querySelector('.toggle_btn');
 const sidebar = document.querySelector('.side_bar');
 const contentArea = document.querySelector('.content-area');

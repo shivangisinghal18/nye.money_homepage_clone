@@ -99,3 +99,93 @@ toggleBtn.addEventListener('click', () => {
     toggleBtn.classList.toggle('opened')
     sidebar.classList.toggle('open');
 });
+
+
+// inserting scrolling code
+
+
+const parent = document.querySelector('.services__desc-desktopview')
+
+window.onscroll=()=>{
+    let top = window.scrollY
+    
+    if(top>=1240 && top<1700){
+        console.log("notdone")
+        parent.style.position = "sticky"
+        parent.style.top = "100px"
+    }
+}
+
+
+const servicelist = document.querySelector('.services__desc-desktopviewlist')
+const service = document.querySelectorAll('.services__service')
+
+let previousactiveservice = service[0]
+service.forEach((element,index)=>{
+
+    element.addEventListener('click',()=>{
+
+         previousactiveservice.classList.remove('serviceactive')
+          element.classList.add('serviceactive')
+          previousactiveservice = element
+
+console.log("service clickesd")
+        let serviceheading
+        let points 
+        let scrollingy
+        scrollingy = element.offsetTop-100
+        console.log("scrollingy upper",scrollingy)
+        if(index==0){
+           
+            serviceheading = "A card that pays you back on every spend"
+            points= ["Up to ₹2000 cashback on every spend",
+                        "Pay directly from your NYE Prepaid",
+                        "Online or offline, earn everywhere",
+                        " A card powered by RuPay security"]
+        }
+
+        else if(index==1){
+            serviceheading = "Freedom to choose banking partner from leading Indian banks"
+
+            points = ["Instant and seamless digital account opening",
+                      "Manage all your accounts on a single app",
+                      "Interest rates that amplify your savings",
+                      "Secure internet & mobile banking"]
+                      scrollingy += 80
+        }
+
+        else if(index==2){
+            serviceheading = "All your payments simplified on one app"
+            points = ["Transfer money to anyone conveniently",
+                      "Pay for utility bills - DTH, mobile, gas etc. instantly",          
+                "Send money via UPI, wallet, or your bank account",  
+                "Earn exciting cashback"]
+        }
+
+        else if(index==3){
+            scrollingy += 80
+            serviceheading = "Personal loans that bring you closer to your dreams"
+            points = ["Pre-approved loans up to ₹10,00,000",
+                "Paperless and transparent process",
+                "Attractive interest rates",
+                "Flexible loan payment options"]
+        }
+        servicelist.children[0].innerHTML = serviceheading;
+        servicelist.children[1].children[0].childNodes.forEach((subelements,i)=>{
+
+            if(subelements.nodeName!="#text")
+             { console.log(subelements)
+                let ind = Math.floor(i/2)
+                console.log("check,",subelements);
+            subelements.children[1].innerHTML= points[ind];
+             }
+        })
+        console.log("scrollingy lower",scrollingy)
+
+        window.scrollTo({
+            top: scrollingy,
+            left: 0,  // x-coordinate
+            behavior: 'smooth' // Smooth scrolling
+          });
+      })
+})

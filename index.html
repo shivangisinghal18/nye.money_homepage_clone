@@ -4,34 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NYE Money - Open Savinga Account Online With Your Preferred Bank</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-bem.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     
-    <div class="side_bar">
-    <div class="sidemininav">
-        <div class="profile">
+    <div class="side-bar">
+    <div class="side-bar__sidemininav">
+        <div class="side-bar__profile-icon">
          <img src="profile.png" alt="profile">
         </div>
-        <div class="sidelogin">Log in</div>
+        <div class="side-bar__sidelogin">Log in</div>
     </div>
 
-   <div class="sidelinks">
+   <div class="side-bar__sidelinks">
 
      <ul>
-     <li class="onesidelink sideactive"><i class="fa-solid fa-home"></i>Home</li>
-     <li class="onesidelink"><i class="fa-solid fa-home"></i>NYE Cards</li>
-     <li class="onesidelink"><i class="fa-solid fa-home"></i>Payments</li>
-     <li class="onesidelink"><i class="fa-solid fa-home"></i>Saving account</li>
-     <li class="onesidelink"><i class="fa-solid fa-home"></i>Loans</li>
-     <div class="breakline"></div>
-     <li class="onesidelink"><i class="fa-solid fa-home"></i>About NYE</li>
-     <li class="onesidelink"><i class="fa-solid fa-home"></i>Customer Care</li>
-     <div class="breakline"></div>
-     <li class="onesidelink"><i class="fa-solid fa-home"></i>Help Support</li>
+     <li class="side-bar__onesidelink sideactive"><i class="fa-solid fa-home"></i>Home</li>
+     <li class="side-bar__onesidelink"><i class="fa-solid fa-home"></i>NYE Cards</li>
+     <li class="side-bar__onesidelink"><i class="fa-solid fa-home"></i>Payments</li>
+     <li class="side-bar__onesidelink"><i class="fa-solid fa-home"></i>Saving account</li>
+     <li class="side-bar__onesidelink"><i class="fa-solid fa-home"></i>Loans</li>
+     <div class="side-bar__breakline"></div>
+     <li class="side-bar__onesidelink"><i class="fa-solid fa-home"></i>About NYE</li>
+     <li class="side-bar__onesidelink"><i class="fa-solid fa-home"></i>Customer Care</li>
+     <div class="side-bar__breakline"></div>
+     <li class="side-bar__onesidelink"><i class="fa-solid fa-home"></i>Help Support</li>
  </ul>
    </div>
 </div>
@@ -45,246 +45,241 @@
 
 
 
-    <div class="nav">
-        <div class="toggle_btn">
+    <header class="nav">
+        <div class="nav__toggle-btn">
             <i class="fa-solid fa-bars"></i>
            </div>
-        <img src="web_nyeLogo.svg" alt="logo">
-        <div class="navlinks">
-        <div class="normalnav">NYE cards</div>
-        <div class="normalnav">Payments</div>
-        <div class="normalnav">Savings account</div>
-        <div class="normalnav">Loans</div>
-        <div class="normalnav">About NYE</div>
-        <div class="normalnav">Customer care</div>
-        </div>
-        <div class="login">Log In  </div>
-    </div>
+        <img class="nav__nyelogo" src="web_nyeLogo.svg" alt="logo">
+        <nav class="nav__navlinks">
+            <div class="nav__onenavlink">NYE cards</div>
+            <div class="nav__onenavlink">Payments</div>
+            <div class="nav__onenavlink">Savings account</div>
+            <div class="nav__onenavlink">Loans</div>
+            <div class="nav__onenavlink">About NYE</div>
+            <div class="nav__onenavlink">Customer care</div>
+        </nav>
+        <div class="nav__login">Log In  </div>
+    </header>
     
-        <div class="mainpage">
-            <div class="all_devices">
-            <img src="website_business_allDevices.png" alt="all_devices">
-            </div>
-            <div class="maincontent">
-                <div class="wrap">
-            <div class="Rs">
-                <div>Rewarding.</div>
-                <div>Revolutionary.</div>
-                <div>Reliable.</div>
-            </div>
+        <section class="hero">
+            <figure class="hero__all-devices">
+            <img class="hero__all-devicesimg" src="website_business_allDevices.png" alt="all-devices">
+            </figure>
+            <div class="hero__content">
+                <div class="hero__content-wrap">
+                    <h2 class="hero__heading">
+                        Rewarding.
+                        Revolutionary.
+                        Reliable.
+                    </h2>
             
-            <p class="tagline">One platform for all your financial needs.</p>
+                    <p class="hero__tagline">One platform for all your financial needs.</p>
             
-                <button class="download">
-                <span>Download NYE</span>
-                <img class="apple_icon" src="apple_icon-removebg-preview.png" alt="apple_store_icon" width="20px"> 
-                <img src="playstore-removebg-preview.png" alt="playstore_icon" width="20px"> 
-                </button>
+                    <button class="hero__download">
+                        <span>Download NYE</span>
+                        <img class="hero__apple-icon" src="apple_icon-removebg-preview.png" alt="apple_store_icon" width="20px"> 
+                        <img src="playstore-removebg-preview.png" alt="playstore_icon" width="20px"> 
+                    </button>
                 </div>
-        </div>
-        </div>
+            </div>
+        </section>
 
-        <section class="about">
-            <div class="paypartners2">
+        <div class="aboutpartners">
+            <div class="aboutpartners__paypartners-desktopview">
                 <div>Payment partners </div>
                 <div class="imgwrap1">
                 <img class = "partner_img" src="website_logo_rupay.svg" alt="rupay_logo">
                 <img class = "partner_img" src="website_logo_npci.svg" alt="npci_logo">
                 </div>
             </div>
-        <div class="banks parts">
+        <div class="aboutpartners__banks parts">
             <div>Trusted by leading Indian Banks</div>
-            <div class="jana_logo">
-            <img src="logo_janaBank.svg" alt="jana_bank_logo">
-            </div>
+            <figure>
+            <img class="jana-logo" src="logo_janaBank.svg" alt="jana_bank_logo">
+            </fifure>
         </div>
-        <div class="partners">
+        <div class="aboutpartners__paynauth">
             <div class="paypartners parts">
                 <div>Payment partners </div>
                 <div class="imgwrap1">
-                <img src="website_logo_rupay.svg" alt="rupay_logo">
-                <img src="website_logo_npci.svg" alt="npci_logo">
+                <img class="partnersimg" src="website_logo_rupay.svg" alt="rupay_logo">
+                <img class="partnersimg" src="website_logo_npci.svg" alt="npci_logo">
                 </div>
             </div>
             <div class="vertical"></div>
             <div class="authpartners parts">
                 <div>Authentication partners </div>
                 <div class="imgwrap2">
-                <img src="cersaiLogo.svg" alt="cersai_logo">
-                <img src="digiLocker.svg" alt="digiLocker">
+                <img class="partnersimg" src="cersaiLogo.svg" alt="cersai_logo">
+                <img class="partnersimg" src="digiLocker.svg" alt="digiLocker">
                 </div>
             </div>
         </div>
         
-        <div class="authpartners2">
+        <div class="aboutpartners__authpartners-desktopview">
             <div>Authentication partners </div>
             <div class="imgwrap2">
             <img class = "partner_img" src="cersaiLogo.svg" alt="cersai_logo">
             <img class = "partner_img digi" src="digiLocker.svg" alt="digiLocker">
             </div>
         </div>
-        </section>
+        </div>
 
-        <section>
             <div class="everything">
-                <div class="everything_img">
-            <img class="everythingimage" src="everything-removebg-preview (1).png" alt="image">
-            </div>
-            <div class="everything_bubble">
-            <!-- <pre>
-            <inline class="get_more_everything">
-Get more out of everything!</inline>
-            </pre> -->
-            <div class="everythingcircle">
+                <figure class="everything__imgcontainer">
+            <img class="everything__image" src="everything-removebg-preview (1).png" alt="image">
+            </figure>
+            <div class="everything__circlecontainer">
+            <div class="everything__circle">
             <img class="get_more_everything" src="get_more_everything.png">
             </div>
             </div>
             </div>
-        </section>
 
         <div class="background">
 
-        <div class="servicepara">
-        <section class="services">
+        <div class="allservices">
+        <div class="services">
 
-            <div class="service">
-                <div class="border">
-                    <img class="rotimg" src="website_business_nyeCard.svg" alt="nye_card">
-                    <div>A card that pays you back on every spend</div>
+            <div class="services__service">
+                <div class="services__imgcontainer">
+                    <img class="rotateimg services__img" src="website_business_nyeCard.svg" alt="nye_card">
+                    <div class="services_oneliner">A card that pays you back on every spend</div>
                     <p>NYE cards</p>
                 </div>
-                <div class="list">
-                    <p>NYE cards</p>
+                <div class="services__desc-list">
+                    <p class="services__listheading">NYE cards</p>
                     <div>
-                    <ul>
-                        <div class="item">
-                        <img src="tickmark.svg" alt="tickmark">
+                    <ul class="services__points">
+                        <div class="services__onepoint">
+                        <img class="services__tickmark" src="tickmark.svg" alt="tickmark">
                         <li>Upto ₹2000 casback on every spend</li>
                         </div>
-                        <div class="item">
-                        <img src="tickmark.svg" alt="tickmark">
+                        <div class="services__onepoint">
+                        <img class="services__tickmark" src="tickmark.svg" alt="tickmark">
                         <li>Pay directly from your NYE Prepaid</li>
                         </div>
-                        <div class="item">
-                        <img src="tickmark.svg" alt="tickmark">
+                        <div class="services__onepoint">
+                        <img class="services__tickmark" src="tickmark.svg" alt="tickmark">
                         <li>Online or offline, earn everywhere</li>
                         </div>
-                        <div class="item">
-                        <img src="tickmark.svg" alt="tickmark">
+                        <div class="services__onepoint">
+                        <img class="services__tickmark" src="tickmark.svg" alt="tickmark">
                         <li>A card powered by RuPay security</li>
                         </div>
                     </ul>
                     </div>
                 </div>
             </div>
-            <div class="service service2">
-                <div class="border">
-                <img src="website_personal_savingAccount.svg" alt="saving_account">
-                <div>Freedom to choose banking partner from leading Indian Banks</div>
+            <div class="services__service service2">
+                <div class="services__imgcontainer">
+                <img  class="services__img" src="website_personal_savingAccount.svg" alt="saving_account">
+                <div class="services_oneliner">Freedom to choose banking partner from leading Indian Banks</div>
                 <p>Savings account</p>
                 </div>
-                <div class="list">
-                    <p>Savings account</p>
+                <div class="services__desc-list">
+                    <p class="services__listheading">Savings account</p>
                     <div>
-                    <ul>
-                        <div class="item">
-                        <img src="tickmark.svg" alt="tickmark">
+                    <ul class="services__points">
+                        <div class="services__onepoint">
+                        <img class="services__tickmark" src="tickmark.svg" alt="tickmark">
                         <li>Instant and seamless digital account opening</li>
                         </div>
-                        <div class="item">
-                        <img src="tickmark.svg" alt="tickmark">
+                        <div class="services__onepoint">
+                        <img class="services__tickmark" src="tickmark.svg" alt="tickmark">
                         <li>Manage all your accounts on a single app</li>
                         </div>
-                        <div class="item">
-                        <img src="tickmark.svg" alt="tickmark">
+                        <div class="services__onepoint">
+                        <img class="services__tickmark" src="tickmark.svg" alt="tickmark">
                         <li>Interest rates that amplify your savings</li>
                         </div>
-                        <div class="item">
-                        <img src="tickmark.svg" alt="tickmark">
+                        <div class="services__onepoint">
+                        <img class="services__tickmark" src="tickmark.svg" alt="tickmark">
                         <li>Secure internet & mobile banking></li>
                         </div>
                     </ul>
                     </div>
                 </div>
             </div>
-            <div class="service service3">
-                <div class="border">
-                <img src="website_business_payment.svg" alt="payment">
-                <div>All your payments simplified on ane app</div>
+            <div class="services__service service3">
+                <div class="services__imgcontainer">
+                <img class="services__img" src="website_business_payment.svg" alt="payment">
+                <div class="services_oneliner">All your payments simplified on ane app</div>
                 <p>Payments</p>
                 </div>
-                <div class="list">
-                    <p>Payments</p>
-                    <ul>
-                        <div class="item">
-                        <img src="tickmark.svg" alt="tickmark">
+                <div class="services__desc-list">
+                    <p class="services__listheading">Payments</p>
+                    <ul class="services__points">
+                        <div class="services__onepoint">
+                        <img class="services__tickmark" src="tickmark.svg" alt="tickmark">
                         <li>Transfer money to anyone conveniently</li>
-                        </div>
-                        <div class="item">
-                        <img src="tickmark.svg" alt="tickmark">
+                        </div>                     
+                        <div class="services__onepoint">
+                        <img class="services__tickmark" src="tickmark.svg" alt="tickmark">
                         <li>Pay for utility bills - DTH, mobile, gas etc. instantly</li>
                         </div>
-                        <div class="item">
-                        <img src="tickmark.svg" alt="tickmark">
+                        <div class="services__onepoint">
+                        <img class="services__tickmark" src="tickmark.svg" alt="tickmark">
                         <li>Send money via UPI, wallet, or your bank account</li>
                         </div>
-                        <div class="item">
-                        <img src="tickmark.svg" alt="tickmark">
+                        <div class="services__onepoint">
+                        <img class="services__tickmark" src="tickmark.svg" alt="tickmark">
                         <li>Earn exciting cashback</li>
                         </div>
                     </ul>
                 </div>
             </div>
-            <div class="service service4">
-                <div class="border">
-                <img src="website_business_loan.svg" alt="loan">
-                <div>Personal loans that bring you closer to your dreams</div>
+            <div class="services__service service4">
+                <div class="services__imgcontainer">
+                <img class="services__img" src="website_business_loan.svg" alt="loan">
+                <div class="services_oneliner">Personal loans that bring you closer to your dreams</div>
                 <p>Loans</p>
                 </div>
-                <div class="list">
-                    <p>Loans</p>
+                <div class="servcices__desc-list">
+                    <p class="services__listheading">Loans</p>
                     <div>
-                    <ul>
-                        <div class="item">
-                        <img src="tickmark.svg" alt="tickmark">
+                    <ul class="services__points">
+                        <div class="services__onepoint">
+                        <img class="services__tickmark" src="tickmark.svg" alt="tickmark">
                         <li>Pre-approved loans up to ₹10,00,000</li>
                         </div>
-                        <div class="item">
-                        <img src="tickmark.svg" alt="tickmark">
+                        <div class="services__onepoint">
+                        <img class="services__tickmark" src="tickmark.svg" alt="tickmark">
                         <li>Paperless and transparent process</li>
                         </div>
-                        <div class="item">
-                        <img src="tickmark.svg" alt="tickmark">
+                        <div class="services__onepoint">
+                        <img class="services__tickmark" src="tickmark.svg" alt="tickmark">
                         <li>Attractive interest rates</li>
                         </div>
-                        <div class="item">
-                        <img src="tickmark.svg" alt="tickmark">
+                        <div class="services__onepoint">
+                        <img class="services__tickmark" src="tickmark.svg" alt="tickmark">
                         <li>Flexible loan payment options</li>
                         </div>
                     </ul>
                     </div>
                 </div>
             </div>
-        </section>
-        <div class="parent">
-        <div class="servicelist">
-            <p>A card that pays you back on every spend</p>
+        </div>
+        <div class="services__desc-desktopview">
+        <div class="services__desc-desktopviewlist">
+            <p class="services__desc-desktopviewtagline">A card that pays you back on every spend</p>
             <div>
-            <ul>
-                <div class="item">
-                <img src="tickmark.svg" alt="tickmark">
+            <ul >
+                <!-- class="services__points"> -->
+                <div class="services__onepoint">
+                <img class="services__tickmark" src="tickmark.svg" alt="tickmark">
                 <li>Upto ₹2000 casback on every spend</li>
                 </div>
-                <div class="item">
-                <img src="tickmark.svg" alt="tickmark">
+                <div class="services__onepoint">
+                <img class="services__tickmark" src="tickmark.svg" alt="tickmark">
                 <li>Pay directly from your NYE Prepaid</li>
                 </div>
-                <div class="item">
-                <img src="tickmark.svg" alt="tickmark">
+                <div class="services__onepoint">
+                <img class="services__tickmark" src="tickmark.svg" alt="tickmark">
                 <li>Online or offline, earn everywhere</li>
                 </div>
-                <div class="item">
-                <img src="tickmark.svg" alt="tickmark">
+                <div class="services__onepoint">
+                <img class="services__tickmark" src="tickmark.svg" alt="tickmark">
                 <li>A card powered by RuPay security</li>
                 </div>
             </ul>
@@ -295,50 +290,50 @@ Get more out of everything!</inline>
         </div>
 
 
-        <section class="benefits">
-            <div class="benefit">
+        <article class="benefits">
+            <div class="benefits__benefit">
                 <img class="imgseamless" src="website_personal_offeringSeamless.svg" alt="seamless">
                 <div>
                     <h6>Seamless</h6>
                     <p>One app for all your financial requirements</p>
                 </div>
             </div>
-            <div class="benefit">
+            <div class="benefits__benefit">
                 <img src="website_personal_offeringSupport.svg" alt="support">
                 <div>
                     <h6>24x7 Support</h6>
                     <p>Unparalleled customer service</p>
                 </div>
             </div>
-            <div class="benefit">
+            <div class="benefits__benefit">
                 <img src="website_personal_offeringSafety.svg" alt="safety">
                 <div>
                     <h6>Safety first</h6>
                     <p>A secure & safe banking experience</p>
                 </div>
             </div>
-            <div class="benefit">
+            <div class="benefits__benefit">
                 <img src="website_personal_offeringTransparent.svg" alt="transparent">
                 <div>
                     <h6>Transparent</h6>
                     <p>No fine print and hidden charges</p>
                 </div>
             </div>
-        </section>
+        </article>
         <div class="background">
         <div class="testimonials">
 
         <section class="marketing">
-            <div class="market">
-                <p class="p1">Over</p> 
+            <div class="marketing__market">
+                <p class="marketing__uppertext">Over</p> 
                 <h3>100M</h3>
-                <p class="p2">customers served so far</p>
+                <p class="marketing__lowertext">customers served so far</p>
             </div>
             
-            <div class="market">
-                <p class="p1">Trusted by</p>
+            <div class="marketing__market">
+                <p class="marketing__uppertext">Trusted by</p>
                 <h3>600K+</h3>
-                <p class="p2">Indian merchants</p>
+                <p class="marketing__lowertext">Indian merchants</p>
             </div>
         </section>
 
@@ -347,11 +342,13 @@ Get more out of everything!</inline>
         <div class="reviews">
 
         <!-- <div class="reviewsection section1"> -->
-            <div class="review">
-            <div class="reviewimg">
+
+            <div class="reviews__review">
+                <div class="reviews__reviewcontent">
+            <div class="reviews__img">
                 <img src="review.png" alt="review">
             </div>
-            <div class="reviewpara">
+            <div class="reviews__para">
                 <p>
                     "<br>
                     Trust NYE when they say banking with them is a breeze. I was able to open my bank account within minutes! No paperwork, only hassle-free banking.<br>
@@ -361,11 +358,12 @@ Get more out of everything!</inline>
                 <p class="right city">Bangalore</p>
             </div>
             </div>
-            <div class="review review2">
-                <div class="reviewimg">
+            </div>
+            <div class="reviews__review review2">
+                <div class="reviews__img">
                     <img src="review.png" alt="review">
                 </div>
-                <div class="reviewpara">
+                <div class="reviews__para">
                     <p>
                         "<br>
                         NYE is simple and user-friendly. I enjoy 1% cashback on all transactions on my NYE Prepaid Card. It is THE SUPER APP for all your banking and financial needs.<br>
@@ -377,11 +375,11 @@ Get more out of everything!</inline>
                 </div>
                 <!-- </div> -->
                 <!-- <div class="reviewsection section2"> -->
-                <div class="review">
-                    <div class="reviewimg">
+                <div class="reviews__review">
+                    <div class="reviews__img">
                         <img src="review.png" alt="review">
                     </div>
-                    <div class="reviewpara">
+                    <div class="reviews__para">
                         <p>
                             "<br>
                             With NYE, I get to experience seamless banking on-the-go by linking multiple bank accounts for easy access and management.<br>
@@ -391,11 +389,11 @@ Get more out of everything!</inline>
                         <p class="right city">Delhi</p>
                     </div>
                     </div>
-                    <div class="review">
-                        <div class="reviewimg">
+                    <div class="reviews__review">
+                        <div class="reviews__img">
                             <img src="review.png" alt="review">
                         </div>
-                        <div class="reviewpara">
+                        <div class="reviews__para">
                             <p>
                                 "<br>
                                 I have had terrible experiences with the customer service of other financial apps. I appreciate how NYE's support team support team patiently helped me with my doubts.<br>
@@ -407,11 +405,11 @@ Get more out of everything!</inline>
                         </div>
                         <!-- </div> -->
                         <!-- <div class="reviewsection section1"> -->
-                        <div class="review review5">
-                            <div class="reviewimg">
+                        <div class="reviews__review review5">
+                            <div class="reviews__img">
                                 <img src="review.png" alt="review">
                             </div>
-                            <div class="reviewpara">
+                            <div class="reviews__para">
                                 <p>
                                     "<br>
                                     I highly recommend NYE to anyone looking for a convenient and user-friendly way to manage their finances. Not only does it allow to easily open a bank account, but it also offers a rewarding card.<br>
@@ -421,11 +419,11 @@ Get more out of everything!</inline>
                                 <p class="right city">Kerala</p>
                             </div>
                             </div>
-                            <div class="review">
-                                <div class="reviewimg">
+                            <div class="reviews__review">
+                                <div class="reviews__img">
                                     <img src="review.png" alt="review">
                                 </div>
-                                <div class="reviewpara">
+                                <div class="reviews__para">
                                     <p>
                                         "<br>
                                         As someone who has more than one bank account, I appreciate how this app makes it easy for me to access all my NYE linked bank accounts on one platform. It helps me feel more in control of my finances.<br>
@@ -435,32 +433,41 @@ Get more out of everything!</inline>
                                     <p class="right city">Pune, Maharashtra</p>
                                 </div>
                                 </div>
-                                <!-- </div> -->
+                                </div>
+
+                                <div class="slider-nav">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <!-- Add more dots depending on the number of reviews -->
                                 </div>
 
                                 </div>
         </div>
         </div>
-    </div>
+    <!-- </div> -->
 
-        <section class="get">
-            <div class="qrcontent">
-            <p class="ontop">A rewarding banking experience that you'll love!</p>
-            <div class="apps">
-                <div class="imgborder">
+        <section class="getnyeapp">
+            <div class="getnyeapp__content">
+            <h2 class="getnyeapp__heading">A rewarding banking experience that you'll love!</h2>
+            <div class="getnyeapp__apps">
+                <div class="getnyeapp__buttons">
                     <a href="https://play.google.com/store/apps/details?id=com.rapipay.nye&pli=1" target="_blank">
                     <img src="getitongoogleplay.png" alt="playstore">
                     </a>
                 </div>
-                <div class="imgborder">
+                <div class="getnyeapp__buttons">
                     <a href="https://apps.apple.com/in/app/nye-money/id1662431820" target="_blank">
                     <img src="downloaditonappstore.png" alt="Applestore">
                     </a>
                 </div>
             </div>
             </div>
-            <div class="qr">
-                <div class="circlecontent">
+            <div class="getnyeapp__qr">
+                <div class="getnyeapp__qrcontainer">
                 <img src="website_qrcode.svg" alt="qr">
                 <pre>
 Scan the QR code to
@@ -471,16 +478,16 @@ download the NYE app
         </section>
 
         <section class="certificates">
-            <h5>
+            <h6>
                 Your security. Our priority.
-            </h5>
-            <div class="certwrap">
+            </h6>
+            <div class="certificates__certificate">
             <a href="https://nye.money/general/iso.pdf" target="_blank">
             <img class="iso" src="website_logo_iso27001.svg" alt="iso">
             </a>
             <p>Protected by ISO 27001 certification</p>
             </div>
-            <div class="certwrap">
+            <div class="certificates__certificate">
             <a href="https://nye.money/general/pci.pdf" target="_blank">
             <img class=pci src="website_logo_pcidss.svg" alt="pci">
             </a>
@@ -489,11 +496,11 @@ download the NYE app
         </section>
 
         <footer class="footer">
-            <div class="aboutfoot">
+            <div class="footer__aboutfoot">
                 <!-- <div class="div2"> -->
-                <div class=" div1">
+                <div class=" footer__linkscontainer">
                     <h4>Personal</h4>
-                    <div class="points">
+                    <div class="footer__links">
                     Nye cards<br>
                     Payments<br>
                     Personal loans<br>
@@ -501,9 +508,9 @@ download the NYE app
                     Insurance
                     </div>
                 </div>
-                <div class=" div1">
+                <div class=" footer__linkscontainer">
                     <h4>Business</h4>
-                    <div class="points">
+                    <div class="footer__links">
                     Nye cards<br>
                     Payments<br>
                     Business loans<br>
@@ -511,9 +518,9 @@ download the NYE app
                     Insurance
                     </div>
                 </div>
-                <div class="div1 company">
+                <div class="footer__linkscontainer company">
                     <h4>Company</h4>
-                    <div class="points">
+                    <div class="footer__links">
                     About us<br>
                     Customer Care<br>
                     Careers<br>
@@ -522,9 +529,9 @@ download the NYE app
                 </div>
                 
                     
-                <div class="div1">
+                <div class="footer__linkscontainer">
                     <h4>Legal</h4>
-                    <div class="points">
+                    <div class="footer__links">
                     Disclaimer<br>
                     Annual Report<br>
                     Annual return 2022<br>
@@ -535,9 +542,9 @@ download the NYE app
                     Privacy Policy (For Loans)
                     </div>
                 </div>
-                <div class="div1 policy">
+                <div class="footer__linkscontainer policy">
                     <h4>Policy</h4>
-                    <div class="points">
+                    <div class="footer__links">
                     PE policy<br>
                     Performance policy<br>
                     KYC policy<br>
@@ -547,7 +554,7 @@ download the NYE app
                     Loan Grievance Redressal Policy
                     </div>
                 </div>
-                <div class="div1">
+                <div class="footer__linkscontainer">
                     <h4>Follow Us On</h4>
                 </div>
                 
@@ -560,6 +567,6 @@ download the NYE app
         </footer>
         </div>
 
-        <script src="script.js"></script>
+        <script src="script-bem.js"></script>
 </body>
 </html>
